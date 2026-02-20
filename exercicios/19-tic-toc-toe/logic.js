@@ -58,14 +58,21 @@ function getWinRegions(){
 
 
 function desableRegio(element){
-    element.style.cursor = 'default' // estado padrao do cursor
+    element.classList.remove('cursor-pointer') // removendo a classe do elemento
     element.removeEventListener('click', handleBoaerdClick)
    
 }
 
 
 
+function handlewin(regions){
+      regions.forEach(function(region){
+         document.querySelector('[data-region="'+ region +'"]').classList.add('win')
+      })
 
+      const playName = document.getElementById(turnPlayer).value
+      document.querySelector('h2').innerHTML = playName + 'venceu!'
+}
 
 
 function handleBoaerdClick(ev){
@@ -89,8 +96,8 @@ function handleBoaerdClick(ev){
 
     const winRegions = getWinRegions()
     if(winRegions.length > 0){
-        console.log('venceu')
-    }else if(vBoard.flat().includes('')){// flat achat o array bidimencional em um uncico array
+        handlewin(winRegions)
+    }else if(vBoard.flat().includes('')){// flat achat o array bidimencional em um unico array
           turnPlayer = turnPlayer === 'player1' ? 'player2' : 'player1'
           updateTitle()
     }else{

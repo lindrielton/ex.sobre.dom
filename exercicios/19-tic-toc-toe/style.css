@@ -15,7 +15,6 @@ body{
 
 #gameBoard span{
     background-color: #ddd;
-    cursor: pointer;
     display: grid;
     place-content: center;
     font: 5rem;
@@ -24,4 +23,9 @@ body{
 
 #gameBoerd span.win{
     background-color:#25a340 ;
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
 }
