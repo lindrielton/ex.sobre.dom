@@ -61,6 +61,14 @@ addTecBtn.addEventListener('click', function (ev){
         stackInputs.removeChild(newRow)
      })
 
+        newRow.append(
+      techNameLabel, techNameIput , expLabel, expRadio1, expLabel1, expRadio2, expLabel2, expRadio3, expLabel3, removeRowBtn
+    )
+
+      stackInputs.append(newRow)
+  })
+  
+
 
      form.addEventListener('submit', function (ev){
       ev.preventDefault()
@@ -71,7 +79,7 @@ addTecBtn.addEventListener('click', function (ev){
 
        let tecnologies = []
       inputRow.forEach(function(row){
-
+         // #rowid input[name="techName"]
          const techName = document.querySelector('#' + row.id + ' input[name="techName"]').value
          const techExp = document.querySelector('#' + row.id + ' input[type="radio"]:checked').value
 
@@ -93,9 +101,6 @@ addTecBtn.addEventListener('click', function (ev){
 
      })
 
-     newRow.append(
-      techNameLabel, techNameIput , expLabel, expRadio1, expLabel1, expRadio2, expLabel2, expRadio3, expLabel3, removeRowBtn
-    )
+  
 
-     stackInputs.append(newRow)
-})
+     
