@@ -27,3 +27,25 @@ document.getElementById('readLocal').addEventListener('click', function(){
 //trabalhando com cooks
 
 
+document.getElementById('cookieBtn').addEventListener('click', function(){
+    const input = document.getElementById('cookie')
+    // cookiesName=value; expires=UtCStringDate; path=/
+    const cookie = 'info :' + input.value + ';'
+    const expiration = 'expires=' + new Date(2026,5,3) + ';'
+    const path = 'path=/;'
+    document.cookie = cookie + expiration + path
+    input.value = ''
+    console.log(document.cookie)
+})
+
+
+document.getElementById('cookie2Btn').addEventListener('click', function(){
+     const input = document.getElementById('cookie2')
+    // cookiesName=value; expires=UtCStringDate; path=/
+    const cookie = 'text :' + input.value + ';'
+    const expiration = 'expires=' + new Date(2026,2,5) + ';'
+    const path = 'path=/;'
+    document.cookie = cookie + expiration + path
+    input.value = ''
+    console.log(document.cookie)
+})
