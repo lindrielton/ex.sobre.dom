@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+    
+}
+
+
+body{
+    background-image: url('https://get.pxhere.com/photo/wish-celebration-food-chocolate-frosting-dessert-delicious-cake-bakery-festive-celebrate-happy-birthday-birthday-cake-candles-happiness-party-decorated-event-frosted-special-birthday-occasion-sweetness-surprise-treat-sprinkles-1349803.jpg');
+    background-size:cover; 
+}
+
+
+
+
+.black{
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+}
+
+#btn{
+    background-color: #b3755c;
+    color:#F7F7F7 ; 
+}
+
+.white{
+    background-color: #b3755c;
+    color:#F7F7F7 ;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+h1{
+    margin: .5rem;
+    color: rgb(255, 240, 240);
+}
+
+
+#button{
+padding: .2rem;
+margin: .5rem;
+cursor: pointer;
+border: none;
+border-radius: .1rem;
+font-size:medium;
+transition: .3s;
+  
+}
+
+
+
+
+header > button:hover{
+    transform: scale(1.2);
+}
+
+
+
+h2, h3{
+    color:white;
+    padding: 2rem;
+}
+
+#footer{
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding: 1rem;
+    margin-bottom: auto;
+    margin-top: 100vh;
+}
+
+button{
+  padding: .2rem;
+  margin: .2rem;
+  cursor: pointer;
+  border: none;
+  background-color:#599eb4;
+  color: white;
+  border-radius: .1rem;
+  font-size:medium;
+  transition: .3s;
+  font-weight: bold;
+  display: inline;
+
+}
+
+button:hover{
+    transform: scale(1.2);
+    background-color: aquamarine;
+    color: black;
+}
+
