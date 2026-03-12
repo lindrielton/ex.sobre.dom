@@ -124,7 +124,165 @@ buttonColrs.addEventListener('click', function(){
 },1)
 
 
+ buttons.forEach( (element) => {
+     if(element.id === 'element7'){
+          const element7 =  document.querySelector('#element7')
+          let ulCasamento = document.querySelector('#marrige')
+          element7.addEventListener('click', function(){
+               let li = document.createElement('li')
+               li.innerText =  ('Massa Bollo tradicional com nozes: \n Pequeno- 60R$ Medio- 80R$ grande - 100r$' )
+               li.classList = 'black'
+               li.style.margin = ".3rem"
+               li.style.padding = '.1rem'
+               li.style.width = '18.75rem'
+               ulCasamento.append(li)
+          })
+          
+     }
+},1)
 
+
+ buttons.forEach( (element) => {
+     if(element.id === 'element8'){
+          const element8 =  document.querySelector('#element8')
+           let ulCasamento = document.querySelector('#marrige')
+          element8.addEventListener('click', function(){
+               let li = document.createElement('li')
+               li.innerText =  ('Massa Tradicional com recheio de Doce de leite: \n Pequeno- 60R$ Medio- 80R$ grande - 100r$' )
+               li.classList = 'black'
+               li.style.margin = ".3rem"
+               li.style.padding = '.1rem'
+               li.style.width = '18.75rem'
+               ulCasamento.append(li)
+          })
+          
+     }
+},1)
+
+
+ buttons.forEach( (element) => {
+     if(element.id === 'element9'){
+          const element9 =  document.querySelector('#element9')
+           let ulCasamento = document.querySelector('#marrige')
+          element9.addEventListener('click', function(){
+               let li = document.createElement('li')
+               li.innerText =  ('Massa Trdicional com recheio de morando é comertura de Ninho: \n Pequeno- 60R$ Medio- 80R$ grande - 100r$' )
+               li.classList = 'black'
+               li.style.margin = ".3rem"
+               li.style.padding = '.1rem'
+               li.style.width = '18.75rem'
+               ulCasamento.append(li)
+          })
+          
+     }
+},1)
+
+
+ buttons.forEach( (element) => {
+     if(element.id === 'element10'){
+          const element10 =  document.querySelector('#element10')
+           let ulTortas = document.querySelector('#pudding')
+          element10.addEventListener('click', function(){
+               let li = document.createElement('li')
+               li.innerText =  (': Pequeno- 69R$ - Medio- 86R$  -grande - 120r$' )
+               li.classList = 'black'
+               li.style.margin = ".3rem"
+               li.style.padding = '.1rem'
+               li.style.width = '18.75rem'
+               ulTortas.append(li)
+          })
+          
+     }
+},1)
+
+
+ buttons.forEach( (element) => {
+     if(element.id === 'element11'){
+          const element11 =  document.querySelector('#element11')
+           let ulTortas = document.querySelector('#pudding')
+          element11.addEventListener('click', function(){
+               let li = document.createElement('li')
+               li.innerText =  (': Pequeno- 69R$ - Medio- 86R$  -grande - 120r$' )
+               li.classList = 'black'
+               li.style.margin = ".3rem"
+               li.style.padding = '.1rem'
+               li.style.width = '18.75rem'
+               ulTortas.append(li)
+          })
+          
+     }
+},1)
+
+ buttons.forEach( (element) => {
+     if(element.id === 'element12'){
+          const element12 =  document.querySelector('#element12')
+           let ulTortas = document.querySelector('#pudding')
+          element12.addEventListener('click', function(){
+               let li = document.createElement('li')
+               li.innerText =  (': Pequeno- 69R$ - Medio- 86R$  -grande - 120r$' )
+               li.classList = 'black'
+               li.style.margin = ".3rem"
+               li.style.padding = '.1rem'
+               li.style.width = '18.75rem'
+               ulTortas.append(li)
+          })
+          
+     }
+},1)
+
+
+ buttons.forEach( (element) => {
+     if(element.id === 'element13'){
+          const element13 =  document.querySelector('#element13')
+           let ulTortas = document.querySelector('#pudding')
+          element13.addEventListener('click', function(){
+               let li = document.createElement('li')
+               li.innerText =  (': Pequeno- 69R$ - Medio- 86R$  -grande - 120r$' )
+               li.classList = 'black'
+               li.style.margin = ".3rem"
+               li.style.padding = '.1rem'
+               li.style.width = '18.75rem'
+               ulTortas.append(li)
+          })
+          
+     }
+},1)
+
+
+ buttons.forEach( (element) => {
+     if(element.id === 'element14'){
+          const element14 =  document.querySelector('#element14')
+           let ulTortas = document.querySelector('#savory')
+          element14.addEventListener('click', function(){
+               let li = document.createElement('li')
+               li.innerText =  ('Todos por 2.50 A unidade' )
+               li.classList = 'black'
+               li.style.margin = ".3rem"
+               li.style.padding = '.1rem'
+               li.style.width = '18.75rem'
+               ulTortas.append(li)
+          })
+          
+     }
+},1)
+
+
+
+})
+
+
+
+let PedidoAnotado = document.querySelector('#fazerPedido')
+let listaCont = 0
+PedidoAnotado.addEventListener("click", function(){
+     listaCont ++
+     const lista = document.querySelector('#anotarPedido')
+     localStorage.setItem('lista', lista.value)
+
+     const respo = localStorage.getItem('lista')
+ 
+     alert(`seu pedido de numero ${listaCont} são ${respo}`)
+     lista.innerText = ''
 })
 
 

@@ -8,5 +8,6 @@ const btn = document.querySelector("#action")
 
 btn.addEventListener('click', function(){
     console.log(document.querySelector('#tipo').value)
+    
 })
 
