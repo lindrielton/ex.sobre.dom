@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-List</title>
+    <style>
+        .stylo{
+            background-color: rgb(132, 247, 65);
+            color: rgb(36, 34, 34);
+            font-weight: bold;
+            margin: .2rem;
+            padding: .2rem;
+            border-radius: 2rem;
+            width: 8rem;
+        }
+
+        .newBtn{
+            margin: .3rem;
+            cursor: pointer;
+            border-style: none;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border-radius: .1rem;
+        }
+
+        body{
+            background-color:#191C1F ;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        input{
+            border-style: none;
+            padding: .2rem;
+            outline: none;
+            
+        } 
+
+        button{
+            padding: .2rem;
+            border-style: none;
+        }
+    </style>
+    <script src="codigo.js" defer></script>
+    
+</head>
+<body>
+    <h1>Lista de tarefas</h1>
+    <label for="nameTarefa">Digite sua tarefa:</label>
+    <input type="text" id="tarefa" name="tipo" placeholder="Nome-tarefa">
+    <button id="action">ok</button>
+    <ul id="lista"></ul>
+</body>
+</html>
