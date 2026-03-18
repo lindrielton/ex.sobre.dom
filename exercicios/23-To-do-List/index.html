@@ -41,6 +41,9 @@
         button{
             padding: .2rem;
             border-style: none;
+            color: #191C1F;
+            font-size: small;
+            margin:.2rem ;
         }
     </style>
     <script src="codigo.js" defer></script>
@@ -48,9 +51,11 @@
 </head>
 <body>
     <h1>Lista de tarefas</h1>
+    <div id="cont"></div>
     <label for="nameTarefa">Digite sua tarefa:</label>
     <input type="text" id="tarefa" name="tipo" placeholder="Nome-tarefa">
     <button id="action">ok</button>
     <ul id="lista"></ul>
+    <main class="main"></main>
 </body>
 </html>
