@@ -18,7 +18,7 @@ let div = document.getElementById("cont")
     Pendentes.id = 'pendent'
     Pendentes.innerText= 'pendentes'
 
-    Concluidas.id = 'Concluidas'
+    Concluidas.id = 'concluidas'
     Concluidas.innerText = 'Concluidas'
 
 
@@ -33,18 +33,18 @@ btn.addEventListener('click', function(){
 
     let btn = document.createElement('button')
     btn.classList = 'newBtn'
-    btn.innerText = 'X' 
+    btn.innerText = 'delet' 
     
                                 
     let listaid = newRow
     newRow++
-    li.innerText = Tarefa.value
+    li.innerText = Tarefa.value + '-'
     li.id = 'id'+ listaid
     
    
     li.appendChild(btn)
     ul.append(li, btnTodas, Pendentes, Concluidas)
-    Tarefa.value = ''
+    
 
 
 
@@ -56,7 +56,8 @@ btn.addEventListener('click', function(){
                    listli.classList.add('stylo')
                    contMakd++
                    contP.innerText = `tarefas: ${contTarefa} | concluidas: ${contMakd}`
-                   
+                   console.log(listli)
+
                    
                 })
         })
@@ -69,6 +70,8 @@ btn.addEventListener('click', function(){
           btn.addEventListener('click', function(){
              let lista = btn.parentNode
               li.remove(lista)
+              
+              
           })
         })
 
@@ -80,12 +83,48 @@ btn.addEventListener('click', function(){
 
 
 
-  btnTodas.addEventListener('click', function(){
-     let main = document.querySelector(".main")
-
+  btnTodas.addEventListener('click', function(ev){
+   let main = document.querySelector('.main')
+   main.innerText = 'todos os Eventos '
      
+        main.appendChild(ul)
+
 
   })
+
+
+  document.getElementById('pendent').addEventListener('click', function(){
+     let main = document.querySelector(".main")
+     
+
+      lista.forEach(function(item){
+        if(!item.classList.contains('stylo')){
+            let p = document.createElement('p')
+            p.innerText += 'pendentes -' + item.textContent
+            console.log(p)
+            main.appendChild(p)
+         }
+       })
+    })
+
+
+
+  
+  document.getElementById('concluidas').addEventListener('click', function(){
+     let main = document.querySelector(".main")
+     
+
+      lista.forEach(function(item){
+        if(item.classList.contains('stylo')){
+            let p = document.createElement('p')
+            p.innerText += 'Concluidas -' + item.textContent
+            console.log(p)
+            main.appendChild(p)
+         }
+       })
+    })
+
+  Tarefa.value = ''
   
 })
 
