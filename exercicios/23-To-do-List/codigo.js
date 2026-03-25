@@ -44,10 +44,20 @@ btn.addEventListener('click', function(){
    
     li.appendChild(btn)
     ul.append(li, btnTodas, Pendentes, Concluidas)
+
+   let mapa = []
+   mapa.push(li.innerText)
+   mapa.map(function(list){
+       let elementos = list
+       console.log({elementos})
+
+       sessionStorage.setItem('lista', elementos)
+   })
+  
+   
     
 
-
-
+   
     let lista = document.querySelectorAll('#id'+ listaid)
 
         lista.forEach(function(lista){
@@ -57,7 +67,7 @@ btn.addEventListener('click', function(){
                    contMakd++
                    contP.innerText = `tarefas: ${contTarefa} | concluidas: ${contMakd}`
                    console.log(listli)
-
+                 
                    
                 })
         })
