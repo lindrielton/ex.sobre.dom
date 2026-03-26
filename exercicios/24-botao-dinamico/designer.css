@@ -22,3 +22,16 @@ button{
 body{
     background-color: gray;
 }
+
+
+.btnpositvo{
+    background-color: aqua;
+    color: black;
+}
+
+
+
+.btnnegativo{
+    background-color: rgb(255, 0, 21);
+    color: white;
+}
