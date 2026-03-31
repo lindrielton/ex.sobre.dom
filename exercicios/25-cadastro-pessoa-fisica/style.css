@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: rgb(29, 28, 28);
+    text-align: center;
+    margin-top: .10rem;
+    color: beige;
+}
+
+main{
+    margin-top: 5rem;
+}
+
+input,button{
+    padding: .1rem;
+    border: none;
+    outline: none;
+}
